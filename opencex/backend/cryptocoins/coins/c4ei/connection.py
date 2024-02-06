@@ -7,7 +7,7 @@ from web3.providers import (
 
 def get_w3_cfei_connection():
     from exchange.settings import env
-    w3 = Web3(HTTPProvider(env('CFEI_RPC_URL', default='https://c4eitn.blockpi.network/v1/rpc/public')))
+    w3 = Web3(HTTPProvider(env('CFEI_RPC_URL', default='https://rpc.c4ei.net')))
     w3.middleware_onion.inject(geth_poa_middleware, layer=0)
     return w3
 

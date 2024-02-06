@@ -36,6 +36,11 @@ BLOCKCHAINS = {
         symbol=CODE,
         contract_address='0xE022f24EDd0558F22ECbd19c8Ad140a5F59B9a67',
         decimal_places=18,
+    ),
+    'C4EI': TokenParams(
+        symbol=CODE,
+        contract_address='0x735920302f009b945A6E0c32b14c771e1E30ce97',
+        decimal_places=18,
     )
 }
 USDT_CURRENCY = register_token(USDT, CODE, BLOCKCHAINS)
