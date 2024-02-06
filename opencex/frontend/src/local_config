@@ -1,0 +1,72 @@
+//###########################################################################
+//   OpenCEX Frontend configuration file. More info
+//   https://polygant.notion.site/Settings-3f9e0aae880e433a9d23e76f62a4a456
+//###########################################################################
+
+const localConfig = {
+  wss_url: "wss://",
+  two_fa: "c4ex.net",
+  project_title: "c4ex.net",
+  api: {
+    baseURL: "https://c4ex.net/api/v1/",
+    basePublicURL: "https://c4ex.net/api/public/v1/",
+    host: "c4ex.net",
+  },
+  api_url: "https://c4ex.net",
+  api_url_plane: "c4ex.net",
+  recaptcha_site_key: "6LdtuLYnAAAAAK3hrMPmADlzfMCP2NyoCNx0D60F",
+  vue_v: "prod",
+  site_domain: "c4ex.net",
+  host: "c4ex.net",
+  help_widget: "",
+  logo: "https://i.ibb.co/xJKytKh/c4exlogo.png",
+  themes: [
+    {
+      main_color: "#2A2259",
+      second_color: "#ffac2a",
+      cancel_color: "#d93d47",
+      login_background: "#36373c",
+      login_text: "white",
+      main_background: "#edf1fa",
+      main_text: "#2a2259",
+      input_color: "white",
+      input_text: "#2a2259",
+      block_color: "white",
+      border_color: "#f0f0f0",
+    },
+    {
+      main_color: "#2A2259",
+      second_color: "#ffac2a",
+      cancel_color: "#d93d47",
+      login_background: "#36373c",
+      login_text: "white",
+      main_background: "#171717",
+      main_text: "#888888",
+      input_color: "#242424",
+      input_text: "#888888",
+      block_color: "#242424",
+      border_color: "#353535",
+    },
+  ],
+  socials: {
+    telegram: {
+      link: "c4eiAirdrop",
+      title: "sitechange",
+    },
+    telegramNews: {
+      link: "",
+      title: "site_news",
+    },
+    mail: "c4ei.net@gmail.com",
+    facebook: {
+      link: "",
+      title: "Exchange",
+    },
+    twitter: {
+      link: "c4ei_net",
+      title: "@",
+    },
+  },
+};
+
+export default localConfig;

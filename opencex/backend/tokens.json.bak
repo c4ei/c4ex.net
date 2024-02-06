@@ -1,0 +1,29 @@
+{
+  "SAWON": {
+    "id": 1001,
+    "blockchains": {
+      "ETH": {
+        "contract": "0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66",
+        "decimals": 18
+      },
+      "BNB": {
+        "contract": "0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66",
+        "decimals": 18
+      },
+      "MATIC": {
+        "contract": "0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66",
+        "decimals": 18
+      },
+      "KLAY": {
+        "contract": "0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66",
+        "decimals": 18
+      }
+    },
+    "pairs": [
+      [
+        1001,
+        "SAWON-USDT"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+C4EI = 29
+CODE = 'C4EI'
+DECIMALS = 18

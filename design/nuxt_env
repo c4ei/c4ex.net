@@ -1,0 +1,14 @@
+###########################################################################
+#   OpenCEX Main configuration file. More info
+#   https://polygant.notion.site/Settings-3f9e0aae880e433a9d23e76f62a4a456
+###########################################################################
+
+
+API_URL="https://c4ex.net/"
+BROWSER_BASE_URL="https://c4ex.net"
+project_title="c4ex.net"
+telegram="c4eiAirdrop"
+facebook=""
+twitter="c4ei_net"
+linkedin=""
+logo="https://i.ibb.co/xJKytKh/c4exlogo.png"
