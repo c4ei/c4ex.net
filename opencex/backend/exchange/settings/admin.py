@@ -39,6 +39,7 @@ VUE_ADMIN_SIDE_MENU = [
     {'icon': 'mdi-coins', 'link': {'name': 'cryptocoins_maticwithdrawalapprove_list'}, 'text': 'Matic Withdrawal Approve'},
     {'icon': 'mdi-coins', 'link': {'name': 'cryptocoins_aahwithdrawalapprove_list'}, 'text': 'Aah Withdrawal Approve'},
     {'icon': 'mdi-coins', 'link': {'name': 'cryptocoins_klaywithdrawalapprove_list'}, 'text': 'Klay Withdrawal Approve'},
+    {'icon': 'mdi-coins', 'link': {'name': 'cryptocoins_c4eiwithdrawalapprove_list'}, 'text': 'C4ei Withdrawal Approve'},
     {'icon': 'mdi-bank-transfer-in', 'link': {'name': 'core_wallettransactions_list'}, 'text': 'Crypto TopUps'},
     {'icon': 'mdi-arrow-right-bold-box', 'link': {'name': 'core_paygatetopup_list'}, 'text': 'Paygate TopUps'},
     {'icon': 'mdi-bank-transfer', 'link': {'name': 'cryptocoins_depositswithdrawalsstats_list'}, 'text': 'TopUps and Withdrawals'},
