@@ -10,7 +10,7 @@ from lib.services.etherscan_client import EtherscanClient
 log = logging.getLogger(__name__)
 
 
-class C4eiscanClient(EtherscanClient):
+class CfeiscanClient(EtherscanClient):
     def __init__(self):
         self.url = 'https://exp.c4ei.net/api?'
 
@@ -18,7 +18,7 @@ class C4eiscanClient(EtherscanClient):
         res = {}
         try:
             res = requests.get(
-                f'{self.url}{uri}&apikey={settings.C4EISCAN_KEY}')
+                f'{self.url}{uri}&apikey={settings.CFEISCAN_KEY}')
             res = res.json()
         except Exception as e:
             log.exception('Can\'t fetch data from blockchain.info')

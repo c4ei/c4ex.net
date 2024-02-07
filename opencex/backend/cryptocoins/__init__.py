@@ -5,3 +5,4 @@ import cryptocoins.coins.usdt
 import cryptocoins.coins.matic
 import cryptocoins.coins.aah
 import cryptocoins.coins.klay
+import cryptocoins.coins.c4ei

@@ -285,6 +285,14 @@ def main():
                     'address_fee': 1.00000000
                 },
             },
+            {
+                'model': WithdrawalFee,
+                'find': {'currency': USDT, 'blockchain_currency': C4EI},
+                'attributes': {
+                    'blockchain_currency': C4EI,
+                    'address_fee': 1.00000000
+                },
+            },
         ],
         TRX: [
             {

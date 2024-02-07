@@ -10,7 +10,7 @@ from cryptocoins.coins.eth.ethereum import ethereum_manager
 from cryptocoins.coins.matic.polygon import matic_manager
 from cryptocoins.coins.aah.c4ex import aah_manager
 from cryptocoins.coins.klay.cypress import klay_manager
-from cryptocoins.coins.c4ei import c4ei_manager
+from cryptocoins.coins.c4ei.cfei import c4ei_manager
 from cryptocoins.coins.trx.tron import tron_manager
 from cryptocoins.coins.bnb.bnb import bnb_manager
 from lib.cipher import AESCoderDecoder
