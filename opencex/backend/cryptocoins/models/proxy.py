@@ -32,3 +32,7 @@ class AahWithdrawalApprove(BaseWithdrawalRequest):
 class KlayWithdrawalApprove(BaseWithdrawalRequest):
     class Meta:
         proxy = True
+
+class C4eiWithdrawalApprove(BaseWithdrawalRequest):
+    class Meta:
+        proxy = True

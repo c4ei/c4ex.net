@@ -142,7 +142,7 @@ def register_token(currency_id, currency_code, blockchains: Optional[Dict[str, T
             log.debug(f'Token {currency} registered as ERC20 Cypress')
 
         if 'C4EI' in blockchains:
-            from cryptocoins.coins.klay.wallet import erc20_cfei_wallet_creation_wrapper, is_valid_c4ei_address
+            from cryptocoins.coins.c4ei.wallet import erc20_cfei_wallet_creation_wrapper, is_valid_c4ei_address
 
             ERC20_C4EI_CURRENCIES.update({
                 currency: blockchains['C4EI']

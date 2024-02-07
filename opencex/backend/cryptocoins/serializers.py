@@ -81,7 +81,7 @@ class KlayKeySerializer(BaseKeySerializer):
         return klay_manager.get_keeper_wallet().private_key
 
 
-class c4eiKeySerializer(BaseKeySerializer):
+class C4eiKeySerializer(BaseKeySerializer):
     def get_encrypted_string(self):
         return c4ei_manager.get_keeper_wallet().private_key
 
