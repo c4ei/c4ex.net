@@ -1,8 +1,8 @@
 from admin_rest import restful_admin as api_admin
 from admin_rest.mixins import ReadOnlyMixin
 from admin_rest.restful_admin import DefaultApiAdmin
-from core.consts.currencies import BEP20_CURRENCIES, ERC20_MATIC_CURRENCIES, ERC20_AAH_CURRENCIES, ERC20_KLAY_CURRENCIES
-from core.consts.currencies import ERC20_CURRENCIES
+from core.consts.currencies import BEP20_CURRENCIES
+from core.consts.currencies import ERC20_CURRENCIES, ERC20_MATIC_CURRENCIES, ERC20_AAH_CURRENCIES, ERC20_KLAY_CURRENCIES, ERC20_C4EI_CURRENCIES
 from core.consts.currencies import TRC20_CURRENCIES
 from core.models import UserWallet
 from core.utils.withdrawal import get_withdrawal_requests_to_process
@@ -12,12 +12,13 @@ from cryptocoins.coins.eth import ETH_CURRENCY
 from cryptocoins.coins.matic import MATIC_CURRENCY
 from cryptocoins.coins.aah import AAH_CURRENCY
 from cryptocoins.coins.klay import KLAY_CURRENCY
+from cryptocoins.coins.c4ei import C4EI_CURRENCY
 from cryptocoins.coins.trx import TRX_CURRENCY
 from cryptocoins.models import ScoringSettings
 from cryptocoins.models import TransactionInputScore
-from cryptocoins.models.proxy import BNBWithdrawalApprove, MaticWithdrawalApprove, AahWithdrawalApprove, KlayWithdrawalApprove
+from cryptocoins.models.proxy import BNBWithdrawalApprove
 from cryptocoins.models.proxy import BTCWithdrawalApprove
-from cryptocoins.models.proxy import ETHWithdrawalApprove
+from cryptocoins.models.proxy import ETHWithdrawalApprove, MaticWithdrawalApprove, AahWithdrawalApprove, KlayWithdrawalApprove, C4eiWithdrawalApprove
 from cryptocoins.models.proxy import TRXWithdrawalApprove
 from cryptocoins.serializers import BNBKeySerializer
 from cryptocoins.serializers import BTCKeySerializer
@@ -26,6 +27,7 @@ from cryptocoins.serializers import TRXKeySerializer
 from cryptocoins.serializers import MaticKeySerializer
 from cryptocoins.serializers import AahKeySerializer
 from cryptocoins.serializers import KlayKeySerializer
+from cryptocoins.serializers import C4eiKeySerializer
 from cryptocoins.tasks.evm import process_payouts_task
 
 class BaseWithdrawalApprove(ReadOnlyMixin, DefaultApiAdmin):
@@ -129,6 +131,20 @@ class AahWithdrawalApproveApiAdmin(BaseWithdrawalApprove):
         if serializer.is_valid(raise_exception=True):
             password = request.data.get('key')
             process_payouts_task.apply_async(['AAH', password, ], queue='aah_payouts')
+
+    process.short_description = 'Process withdrawals'
+
+@api_admin.register(C4eiWithdrawalApprove)
+class C4eiWithdrawalApproveApiAdmin(BaseWithdrawalApprove):
+    def get_queryset(self):
+        return get_withdrawal_requests_to_process([C4EI_CURRENCY, *ERC20_C4EI_CURRENCIES], blockchain_currency='C4EI')
+
+    @api_admin.action(permissions=True)
+    def process(self, request, queryset):
+        serializer = C4eiKeySerializer(data=request.data)
+        if serializer.is_valid(raise_exception=True):
+            password = request.data.get('key')
+            process_payouts_task.apply_async(['C4EI', password, ], queue='c4ei_payouts')
 
     process.short_description = 'Process withdrawals'
 

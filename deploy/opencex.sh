@@ -914,7 +914,7 @@ services:
     opencex-cel:
      container_name: opencex-cel
      image: opencex:latest
-     command: celery -A exchange worker -l info -n general -B -s /tmp/cebeat.db -X btc,eth_new_blocks,eth_deposits,eth_payouts,eth_check_balances,eth_accumulations,eth_tokens_accumulations,eth_send_gas,bnb_new_blocks,bnb_deposits,bnb_payouts,bnb_check_balances,bnb_accumulations,bnb_tokens_accumulations,bnb_send_gas,trx_new_blocks,trx_deposits,trx_payouts,trx_check_balances,trx_accumulations,trx_tokens_accumulations,matic_new_blocks,matic_deposits,matic_payouts,matic_check_balances,matic_accumulations,matic_tokens_accumulations,aah_new_blocks,aah_deposits,aah_payouts,aah_check_balances,aah_accumulations,aah_tokens_accumulations,klay_new_blocks,klay_deposits,klay_payouts,klay_check_balances,klay_accumulations,klay_tokens_accumulations
+     command: celery -A exchange worker -l info -n general -B -s /tmp/cebeat.db -X btc,eth_new_blocks,eth_deposits,eth_payouts,eth_check_balances,eth_accumulations,eth_tokens_accumulations,eth_send_gas,bnb_new_blocks,bnb_deposits,bnb_payouts,bnb_check_balances,bnb_accumulations,bnb_tokens_accumulations,bnb_send_gas,trx_new_blocks,trx_deposits,trx_payouts,trx_check_balances,trx_accumulations,trx_tokens_accumulations,matic_new_blocks,matic_deposits,matic_payouts,matic_check_balances,matic_accumulations,matic_tokens_accumulations,aah_new_blocks,aah_deposits,aah_payouts,aah_check_balances,aah_accumulations,aah_tokens_accumulations,c4ei_new_blocks,c4ei_deposits,c4ei_payouts,c4ei_check_balances,c4ei_accumulations,c4ei_tokens_accumulations
      restart: always
      volumes:
       - /app/opencex/backend:/app
@@ -1063,10 +1063,10 @@ services:
       - bitcoind
       - opencex
 
-    opencex-klay-blocks:
-     container_name: opencex-klay-blocks
+    opencex-c4ei-blocks:
+     container_name: opencex-c4ei-blocks
      image: opencex:latest
-     command: bash -c "celery -A exchange worker -l info -n klay_new_blocks -Q klay_new_blocks -c 1 "
+     command: bash -c "celery -A exchange worker -l info -n c4ei_new_blocks -Q c4ei_new_blocks -c 1 "
      restart: always
      volumes:
       - /app/opencex/backend:/app
@@ -1085,7 +1085,7 @@ services:
     opencex-deposits:
      container_name: opencex-deposits
      image: opencex:latest
-     command: bash -c "celery -A exchange worker -l info -n deposits -Q trx_deposits,bnb_deposits,eth_deposits,matic_deposits,aah_deposits,klay_deposits -c 1 "
+     command: bash -c "celery -A exchange worker -l info -n deposits -Q trx_deposits,bnb_deposits,eth_deposits,matic_deposits,aah_deposits,c4ei_deposits -c 1 "
      restart: always
      volumes:
       - /app/opencex/backend:/app
@@ -1104,7 +1104,7 @@ services:
     opencex-payouts:
      container_name: opencex-payouts
      image: opencex:latest
-     command: bash -c "celery -A exchange worker -l info -n payouts -Q trx_payouts,eth_payouts,bnb_payouts,matic_payouts,aah_payouts,klay_payouts -c 1 "
+     command: bash -c "celery -A exchange worker -l info -n payouts -Q trx_payouts,eth_payouts,bnb_payouts,matic_payouts,aah_payouts,c4ei_payouts -c 1 "
      restart: always
      volumes:
       - /app/opencex/backend:/app
@@ -1123,7 +1123,7 @@ services:
     opencex-balances:
      container_name: opencex-balances
      image: opencex:latest
-     command: bash -c "celery -A exchange worker -l info -n check_balances -Q trx_check_balances,bnb_check_balances,eth_check_balances,matic_check_balances,aah_check_balances,klay_check_balances -c 1 "
+     command: bash -c "celery -A exchange worker -l info -n check_balances -Q trx_check_balances,bnb_check_balances,eth_check_balances,matic_check_balances,aah_check_balances,c4ei_check_balances -c 1 "
      restart: always
      volumes:
       - /app/opencex/backend:/app
@@ -1142,7 +1142,7 @@ services:
     opencex-coin-accumulations:
      container_name: opencex-coin-accumulations
      image: opencex:latest
-     command: bash -c "celery -A exchange worker -l info -n coin_accumulations -Q trx_accumulations,bnb_accumulations,eth_accumulations,matic_accumulations,aah_accumulations,klay_accumulations -c 1 "
+     command: bash -c "celery -A exchange worker -l info -n coin_accumulations -Q trx_accumulations,bnb_accumulations,eth_accumulations,matic_accumulations,aah_accumulations,c4ei_accumulations -c 1 "
      restart: always
      volumes:
       - /app/opencex/backend:/app
@@ -1161,7 +1161,7 @@ services:
     opencex-token-accumulations:
      container_name: opencex-token-accumulations
      image: opencex:latest
-     command: bash -c "celery -A exchange worker -l info -n tokens_accumulations -Q trx_tokens_accumulations,bnb_tokens_accumulations,eth_tokens_accumulations,matic_tokens_accumulations,aah_tokens_accumulations,klay_tokens_accumulations -c 1 "
+     command: bash -c "celery -A exchange worker -l info -n tokens_accumulations -Q trx_tokens_accumulations,bnb_tokens_accumulations,eth_tokens_accumulations,matic_tokens_accumulations,aah_tokens_accumulations,c4ei_tokens_accumulations -c 1 "
      restart: always
      volumes:
       - /app/opencex/backend:/app
@@ -1180,7 +1180,7 @@ services:
     opencex-gas:
      container_name: opencex-gas
      image: opencex:latest
-     command: bash -c "celery -A exchange worker -l info -n send_gas -Q trx_send_gas,bnb_send_gas,eth_send_gas,matic_send_gas,aah_send_gas,klay_send_gas -c 1 "
+     command: bash -c "celery -A exchange worker -l info -n send_gas -Q trx_send_gas,bnb_send_gas,eth_send_gas,matic_send_gas,aah_send_gas,c4ei_send_gas -c 1 "
      restart: always
      volumes:
       - /app/opencex/backend:/app

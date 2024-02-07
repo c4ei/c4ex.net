@@ -13,6 +13,7 @@ PAIRS_LIST = [
     (MATIC_USDT, 'MATIC-USDT'),
     (AAH_USDT, 'AAH-USDT'),
     (KLAY_USDT, 'KLAY-USDT'),
+    (C4EI_USDT, 'C4EI-USDT'),
 ]
 
 

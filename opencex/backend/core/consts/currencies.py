@@ -26,6 +26,7 @@ BEP20_CURRENCIES: Dict[Currency, TokenParams] = {}
 ERC20_MATIC_CURRENCIES: Dict[Currency, TokenParams] = {}
 ERC20_AAH_CURRENCIES: Dict[Currency, TokenParams] = {}
 ERC20_KLAY_CURRENCIES: Dict[Currency, TokenParams] = {}
+ERC20_C4EI_CURRENCIES: Dict[Currency, TokenParams] = {}
 
 ALL_TOKEN_CURRENCIES: List[Currency] = []
 
