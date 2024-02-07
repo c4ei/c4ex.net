@@ -409,7 +409,7 @@ def main():
                 'attributes': {
                     'name': 'MATIC',
                     'decimals': 8,
-                    'index': 27,
+                    'index': 20,
                     'tx_explorer': 'https://polygonscan.com/tx/',
                     'links': {
                         "bt": {"href": "", "title": "BitcoinTalk"},
@@ -458,7 +458,7 @@ def main():
                 'attributes': {
                     'name': 'AllAboutHealthy',
                     'decimals': 8,
-                    'index': 28,
+                    'index': 30,
                     'tx_explorer': 'https://exp.c4ex.net/tx/',
                     'links': {
                         "exp": {
@@ -510,7 +510,7 @@ def main():
                 'attributes': {
                     'name': 'Klaytn',
                     'decimals': 8,
-                    'index': 29,
+                    'index': 40,
                     'tx_explorer': 'https://klaytnscope.com/tx/',
                     'links': {
                         "exp": {
@@ -560,9 +560,9 @@ def main():
                 'model': CoinInfo,
                 'find': {'currency': C4EI},
                 'attributes': {
-                    'name': 'AllAboutHealthy',
+                    'name': 'C4EI',
                     'decimals': 8,
-                    'index': 28,
+                    'index': 50,
                     'tx_explorer': 'https://exp.c4ei.net/tx/',
                     'links': {
                         "exp": {
