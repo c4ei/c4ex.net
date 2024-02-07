@@ -12,7 +12,7 @@ log = logging.getLogger(__name__)
 
 class CfeiscanClient(EtherscanClient):
     def __init__(self):
-        self.url = 'https://exp.c4ei.net/api?'
+        self.url = 'https://api.c4ei.net/?'
 
     def _make_request(self, uri=''):
         res = {}

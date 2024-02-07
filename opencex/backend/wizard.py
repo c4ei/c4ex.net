@@ -563,7 +563,7 @@ def main():
                     'name': 'C4EI',
                     'decimals': 8,
                     'index': 50,
-                    'tx_explorer': 'https://exp.c4ei.net/tx/',
+                    'tx_explorer': 'https://exp.c4ei.net/transaction/',
                     'links': {
                         "exp": {
                             "href": "https://exp.c4ei.net/",
