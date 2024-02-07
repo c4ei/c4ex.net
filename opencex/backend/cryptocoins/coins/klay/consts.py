@@ -1,3 +1,3 @@
-KLAY = 40
+KLAY = 29
 CODE = 'KLAY'
 DECIMALS = 18

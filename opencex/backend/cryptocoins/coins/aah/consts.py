@@ -1,3 +1,3 @@
-AAH = 30
+AAH = 28
 CODE = 'AAH'
 DECIMALS = 18
