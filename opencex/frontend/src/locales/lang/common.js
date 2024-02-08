@@ -263,7 +263,7 @@ const common = {
     walletdeposit_title: "Внесение средств на биржевой аккаунт",
     walletdeposit_text:
       "AAH-AUSD contract address : 0x3adBF8fa04c21517D8E50908305D0413D2A44300 " +
-      "C4EI-USDT contract address : 0x735920302f009b945A6E0c32b14c771e1E30ce97 " +
+      "C4EI-USDT contract address : 0xf10e02ce41b28e52ad015eae3a83e040d4aee3a8 " +
       "После выбора криптовалюты в качестве метода пополнения счета вы увидите окно, " +
       "в котором вам нужно будет создать адрес для перевода выбранной монеты или токена. " +
       'Нажмите кнопку "Создать", и вы увидите адрес, на который нужно отправить криптовалюту для пополнения счета. ' +
@@ -1274,7 +1274,7 @@ const common = {
     walletdeposit_title: "Deposit funds to   account",
     walletdeposit_text:
       "AAH-AUSD contract address : 0x3adBF8fa04c21517D8E50908305D0413D2A44300\n" +
-      "C4EI-USDT contract address : 0x735920302f009b945A6E0c32b14c771e1E30ce97\n" +
+      "C4EI-USDT contract address : 0xf10e02ce41b28e52ad015eae3a83e040d4aee3a8\n" +
       "After selecting the cryptocurrency transfer as a deposit method,\n" +
       "you will see a window where you will need to generate an address\n" +
       "to transfer the appropriate cryptocurrency to. Click ‘Create’\n" +

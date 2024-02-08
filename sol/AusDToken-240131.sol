@@ -29,6 +29,15 @@ usdA 2024-01-31 - klay
 Contract Name: usdA
 contract address : 0xE022f24EDd0558F22ECbd19c8Ad140a5F59B9a67
 block number	144703820
+
+############################################
+################### C4EI ###################
+############################################
+USD 2024-02-08 - C4EI --> contract AusDToken is BEP20('C4EI USD', 'USDT') 
+dev : 0x441e04809C92cB43d3b1D0e2D8314408E5048bb1
+contract address : 0xf10e02ce41b28e52ad015eae3a83e040d4aee3a8
+MINT : 100000000000000000000000 - 100000 EA
+
 */
 
 // SPDX-License-Identifier: MIT
