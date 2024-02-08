@@ -39,7 +39,7 @@ BLOCKCHAINS = {
     ),
     'C4EI': TokenParams(
         symbol=CODE,
-        contract_address='0xf10e02ce41b28e52ad015eae3a83e040d4aee3a8',
+        contract_address='0xf10E02Ce41b28e52AD015eaE3A83e040D4Aee3A8',
         decimal_places=18,
     )
 }

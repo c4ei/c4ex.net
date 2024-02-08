@@ -35,7 +35,7 @@ block number	144703820
 ############################################
 USD 2024-02-08 - C4EI --> contract AusDToken is BEP20('C4EI USD', 'USDT') 
 dev : 0x441e04809C92cB43d3b1D0e2D8314408E5048bb1
-contract address : 0xf10e02ce41b28e52ad015eae3a83e040d4aee3a8
+contract address : 0xf10E02Ce41b28e52AD015eaE3A83e040D4Aee3A8
 MINT : 100000000000000000000000 - 100000 EA
 
 */
