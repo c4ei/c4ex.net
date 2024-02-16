@@ -6,9 +6,9 @@ Block2.vue
         <img class="block3-img" src="/img/laptop.png" />
       </div>
       <div class="col-span-2 block3-right">
-        <h2><span>All About Healthy(AAH)</span>Add <a href="https://c4ei.net/metaAAH.html" target="_blank">Metamask</a>now!</h2>
+        <h2><span>All About Health(AAH)</span>Add <a href="https://c4ei.net/metaAAH.html" target="_blank">Metamask</a>now!</h2>
         <p>
-          network: AAH (All About Healthy)
+          network: AAH (All About Health)
           <br/>RPC URL: https://rpc.c4ex.net
           <br/>chain ID: 21133
           <br/>symbol: AAH

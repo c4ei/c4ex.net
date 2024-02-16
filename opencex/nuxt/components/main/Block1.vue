@@ -3,8 +3,9 @@
     <div class="content">
       <div class="grid grid-cols-2 block1">
         <div class="block1-left">
-          <h1>With C4EX and All About Healthy</h1>
-          <p class="block-text">(AAH) Network Have a happy time</p>
+          <h1>All About Health(AAH)</h1>
+          <!-- <p class="block-text"></p> -->
+          <a class="btn" href="https://c4ei.net" target="_blank">Check AAH information</a>
           <div class="course">
             <img src="/img/btc.svg" class="inline-block" />
             <span>BTC Price: {{ course.toFixed(2) }} USDT</span>

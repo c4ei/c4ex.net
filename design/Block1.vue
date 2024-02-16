@@ -4,7 +4,7 @@ Block1.vue
     <div class="content">
       <div class="grid grid-cols-2 block1">
         <div class="block1-left">
-          <h1>With C4EX and All About Healthy</h1>
+          <h1>With C4EX and All About Health</h1>
           <p class="block-text">(AAH) Network Have a happy time</p>
           <div class="course">
             <img src="/img/btc.svg" class="inline-block" />
