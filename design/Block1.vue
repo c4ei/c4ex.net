@@ -1,11 +1,14 @@
-Block1.vue
 <template>
   <div class="main-top-wrapper">
     <div class="content">
       <div class="grid grid-cols-2 block1">
         <div class="block1-left">
-          <h1>With C4EX and All About Health</h1>
-          <p class="block-text">(AAH) Network Have a happy time</p>
+          <h1>All About Health(AAH)</h1>
+          <p class="block-text">
+             <a class="btn" href="https://docs.google.com/document/d/1yavY9OEqn0HUPwB_eUCxFQETealZdzQu1rj7yUnmV2M/edit?usp=sharing" target="_blank">AAH 구매법</a>
+             <a class="btn" href="https://c4ei.net" target="_blank">AAH info</a>
+             <a class="btn" href="https://shop.c4ei.net" target="_blank">AAH SHOP</a>
+          </p>
           <div class="course">
             <img src="/img/btc.svg" class="inline-block" />
             <span>BTC Price: {{ course.toFixed(2) }} USDT</span>

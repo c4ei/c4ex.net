@@ -4,8 +4,11 @@
       <div class="grid grid-cols-2 block1">
         <div class="block1-left">
           <h1>All About Health(AAH)</h1>
-          <!-- <p class="block-text"></p> -->
-          <a class="btn" href="https://c4ei.net" target="_blank">Check AAH information</a>
+          <p class="block-text">
+             <a class="btn" href="https://docs.google.com/document/d/1yavY9OEqn0HUPwB_eUCxFQETealZdzQu1rj7yUnmV2M/edit?usp=sharing" target="_blank">AAH 구매법</a>
+             <a class="btn" href="https://c4ei.net" target="_blank">AAH info</a>
+             <a class="btn" href="https://shop.c4ei.net" target="_blank">AAH SHOP</a>
+          </p>
           <div class="course">
             <img src="/img/btc.svg" class="inline-block" />
             <span>BTC Price: {{ course.toFixed(2) }} USDT</span>
