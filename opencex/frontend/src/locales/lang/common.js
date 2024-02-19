@@ -256,6 +256,8 @@ const common = {
     walletwithdrawal: "История Выводов",
     walletwithdrawal_title: "Вывод средств с биржевого аккаунта",
     walletwithdrawal_text:
+      "USDT 출금은 AAH,C4EI, MATIC 세가지 네트워크 만 가능합니다." +
+      "USDT withdrawal is only possible on three networks(AAH, C4EI, and MATIC) " +
       "После выбора криптовалюты в качестве метода вывода средств вы увидите окно, " +
       "в котором вам нужно указать количество и адрес назначения для перевода соответствующей монеты или токена. " +
       'После ввода данных нажмите кнопку "Вывод". На ваш имейл будет отправлено письмо со ссылкой подтверждения. ' +
@@ -1265,6 +1267,8 @@ const common = {
     walletwithdrawal: "Recent Withdrawals",
     walletwithdrawal_title: "Withdrawal funds from   account",
     walletwithdrawal_text:
+      "USDT 출금은 AAH,C4EI, MATIC 세가지 네트워크 만 가능합니다. " +
+      "USDT withdrawal is only possible on three networks: AAH, C4EI, and MATIC. " +
       "After selecting a cryptocurrency as a withdrawal method, " +
       "you will see a window where you need to specify the amount and destination address to transfer the coin or token. " +
       "After entering the details, click the 'Withdrawal' button. " +
