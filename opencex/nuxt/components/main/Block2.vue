@@ -14,7 +14,7 @@
           <br/>explorer URL: https://exp.c4ex.net
         </p>
         <a href="https://exp.c4ex.net" target="_blank">explorer</a> / <a href="https://stat.c4ex.net" target="_blank">node status</a>
-        <p>C4EX 는 현재 개발중인 싸이트입니다. This site is currently under development.</p>
+        <!-- <p>C4EX 는 현재 개발중인 싸이트입니다. This site is currently under development.</p> -->
         <!-- <p class="text1">Trading crypto has never been so easy and convenient. Smooth interface giving you the best experience. </p>
         <div class="separator"></div>
         <p class="text2">We took care of your convenience</p>

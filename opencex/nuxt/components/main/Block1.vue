@@ -5,9 +5,10 @@
         <div class="block1-left">
           <h1>All About Health(AAH)</h1>
           <p class="block-text">
-             <a class="btn" href="https://docs.google.com/document/d/1yavY9OEqn0HUPwB_eUCxFQETealZdzQu1rj7yUnmV2M/edit?usp=sharing" target="_blank">AAH 구매법</a>
-             <a class="btn" href="https://c4ei.net" target="_blank">AAH info</a>
-             <a class="btn" href="https://shop.c4ei.net" target="_blank">AAH SHOP</a>
+            <a class="btn2" href="https://docs.google.com/document/d/11h0WhWO0GCep63sKr9i0xM13nrllVVIBPZVs84re8Jk/edit?usp=sharing" target="_blank">싸이트 사용법</a> 
+            <a class="btn2" href="https://c4ei.net" target="_blank">C4EI 홈페이지</a><br />
+            <a class="btn2" href="https://shop.c4ei.net" target="_blank">AAH SHOP</a>
+            <a class="btn2" href="https://docs.google.com/document/d/1yavY9OEqn0HUPwB_eUCxFQETealZdzQu1rj7yUnmV2M/edit?usp=sharing" target="_blank">AAH 구매법</a>
           </p>
           <div class="course">
             <img src="/img/btc.svg" class="inline-block" />
@@ -58,6 +59,19 @@ body h1 {
   left: 2px;
   top: 1px;
 }
+.btn2
+{
+    height: 42px;
+    background: #6352CD;
+    border-radius: 5px;
+    font-weight: 400;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    padding: 12px 5px 2px 5px;
+    display: inline-block;
+    margin-bottom: 2px;
+}
 @media(max-width: 900px) {
   .block1 {
     display: flex !important;
@@ -88,6 +102,7 @@ body h1 {
     height: 44px;
     font-size: 13px;
     padding: 15px 30px;
+    margin-bottom: 2px;
   }
 }
 </style>
